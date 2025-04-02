@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTFフォートナイトチーム</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        header h1, footer p {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .team-member {
+            background: white;
+            margin: 10px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        .team-member h3 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .team-member p {
+            margin: 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BTFフォートナイトチームへようこそ</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">私たちについて</a></li>
+                <li><a href="#team">チームメンバー</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>私たちについて</h2>
+        <p>BTFは、eスポーツで卓越したパフォーマンスを誇るトップクラスのフォートナイトチームです。</p>
+    </section>
+    <section id="team">
+        <h2>チームメンバー</h2>
+        <div id="team-members">
+            <!-- チームメンバーがここに追加されます -->
+        </div>
+        <script>
+            function addTeamMember(name, role) {
+                const teamMembersDiv = document.getElementById('team-members');
+                const memberDiv = document.createElement('div');
+                memberDiv.classList.add('team-member');
+                memberDiv.innerHTML = `<h3>${name}</h3><p>${role}</p>`;
+                teamMembersDiv.appendChild(memberDiv);
+            }
+
+            // チームメンバーを追加
+            addTeamMember('TINNYU', 'オーナー');
+        </script>
+    </section>
+    <section id="contact">
+        <h2>お問い合わせ</h2>
+        <p>お問い合わせは現在ご利用できません。</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 BTFフォートナイトチーム. All rights reserved.</p>
+    </footer>
+</body>
+</html>
